@@ -1,0 +1,30 @@
+.myLibrary {
+    display: flex;
+    gap: 8px;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.myLibrary img {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+}
+
+.myLibrary p {
+    width: 46px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #8E8E8E;
+    background-color: white;
+}
+
+.myLibrary:hover {
+    border: solid 1px #8E8E8E;
+    cursor: pointer;
+}

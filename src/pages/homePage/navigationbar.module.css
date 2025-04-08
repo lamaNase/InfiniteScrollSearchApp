@@ -1,0 +1,61 @@
+.header {
+    padding: 16px 40px;
+    border-bottom: 1px;
+    justify-content: space-between;
+    display: flex;
+    background-color: white;
+}
+
+.rightSide {
+    width: 820px;
+    display: flex;
+    gap: 5.6px;
+    background-color: white;
+}
+
+.headerButtons {
+    padding-right: 84px;
+    display: flex;
+    gap: 53px;
+    background-color: white;
+}
+
+.leftSide {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    background-color: white;
+}
+
+.leftSide img {
+    background-color: white;
+}
+
+.leftSide img:hover {
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 2px;
+    height: 31px;
+    border-radius: 999px;
+    background-color: #E5E5E5;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 600px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .rightSide {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .headerButtons {
+        flex-direction: column;
+    }
+}

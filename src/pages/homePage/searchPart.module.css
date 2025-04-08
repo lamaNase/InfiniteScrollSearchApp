@@ -1,0 +1,94 @@
+.main {
+    width: 100%;
+    height: 1000px;
+    background-color: #0A8D56;
+    position: relative;
+}
+
+.main form {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    display: flex;
+    gap: 15px;
+    background-color: #0A8D56;
+}
+
+.main form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #0A8D56;
+}
+
+.main ul {
+    list-style-type: none;
+    border: solid 1px black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: start;
+    padding: 5px;
+}
+
+.main ul li {
+    width: 90%;
+}
+
+.main ul li:hover {
+    background-color: #0A8D56;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #0A8D56;
+    color: white;
+}
+
+.main form input {
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.main form img {
+    background-color: #0A8D56;
+}
+
+.main form img:hover {
+    cursor: pointer;
+    background-color: #10a366;;
+}
+
+.group {
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    background-color: #0A8D56;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 600px;
+        background-color: #0A8D56;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .main form {
+        top: 15%;
+        right: 15%;
+    }
+
+    .group {
+        top: 40%;
+        right: 15%;
+    }
+}
