@@ -8,6 +8,11 @@ This project implements a search functionality with infinite scrolling using the
 - **API Integration**: Fetches data from a remote API based on the search term. 🌍
 - **Infinite Scroll**: Automatically fetches more data as the user scrolls down the page using the Intersection Observer API. 📲🔄
 
+# Demo Video 🎥
+
+https://github.com/user-attachments/assets/77b8b15f-21eb-4720-a9d9-edcc2d74e1ec
+
+
 ## Installation 🚀
 1. Clone the repository:
    ```bash
