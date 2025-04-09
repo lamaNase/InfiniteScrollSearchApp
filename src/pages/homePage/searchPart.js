@@ -47,10 +47,18 @@ function SearchPart() {
     const handleKeyDown = (e) => {
         if (e.key === "ArrowDown") {
             e.preventDefault();
-            setActiveIndex(prev => (prev + 1) % suggestions.length);
+            setActiveIndex(prev => {
+                const nextIndex = (prev + 1) % suggestions.length;
+                setQuery(suggestions[nextIndex]);
+                return nextIndex;
+            });
         } else if (e.key === "ArrowUp") {
             e.preventDefault();
-            setActiveIndex(prev => (prev - 1 + suggestions.length) % suggestions.length);
+            setActiveIndex(prev => {
+                const nextIndex = (prev - 1 + suggestions.length) % suggestions.length;
+                setQuery(suggestions[nextIndex]);
+                return nextIndex;
+            });
         } else if (e.key === "Enter") {
             e.preventDefault();
             if (activeIndex >= 0) {
@@ -58,12 +66,12 @@ function SearchPart() {
                 setQuery(selected);
                 setSuggestions([]);
                 setShowMenu(false);
-                handleSearch(e, selected); // Trigger search with selected suggestion
+                handleSearch(e, selected);
             } else {
-                handleSearch(e); // Regular search with current query
+                handleSearch(e);
             }
         }
-    };
+    };    
 
     const handleBlur = () => {
         setShowMenu(false);
