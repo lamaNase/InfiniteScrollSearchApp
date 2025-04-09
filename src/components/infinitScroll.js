@@ -6,24 +6,24 @@ function InfiniteScroll() {
   const [isLoading, setIsLoading] = useState(true);
   const [hasMoreData, setHasMoreData] = useState(true);
   const [loadedData, setLoadedData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1); // ✅ Start from 1 (API starts from 1)
+  const [currentPage, setCurrentPage] = useState(1);
   const boxRef = useRef(null);
 
   useEffect(() => {
-    if (!hasMoreData) return; // ✅ Stop fetching when no more data
+    if (!hasMoreData) return;
 
     setIsLoading(true);
     fetch(`https://jsonplaceholder.typicode.com/posts?_page=${currentPage}&_limit=10`)
       .then(response => response.json())
       .then(data => {
         if (data.length === 0) {
-          setHasMoreData(false); // ✅ If API returns no data, stop fetching
+          setHasMoreData(false);
         } else {
-          setLoadedData(prev => [...prev, ...data]); // ✅ Append new data
+          setLoadedData(prev => [...prev, ...data]);
         }
         setIsLoading(false);
       });
-  }, [currentPage, hasMoreData]); // ✅ Run when currentPage or hasMoreData changes
+  }, [currentPage, hasMoreData]);
 
   useEffect(() => {
     if (!boxRef.current || !hasMoreData) return;
@@ -49,7 +49,7 @@ function InfiniteScroll() {
   return (
     <div>
       <Questions questions={loadedData} />
-      <div ref={boxRef} style={{ height: "50px" }}>
+      <div ref={boxRef}>
       {hasMoreData && < Loader />}
       </div>
     </div>
