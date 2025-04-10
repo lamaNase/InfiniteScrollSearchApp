@@ -1,4 +1,4 @@
-.myLibrary {
+.headerButton {
     display: flex;
     gap: 8px;
     padding: 8px 10px 8px 10px;
@@ -9,13 +9,13 @@
     align-items: center;
 }
 
-.myLibrary img {
+.headerButton img {
     width: 24px;
     height: 24px;
     background-color: white;
 }
 
-.myLibrary p {
+.headerButton p {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -24,7 +24,7 @@
     background-color: white;
 }
 
-.myLibrary:hover {
+.headerButton:hover {
     border: solid 1px #8E8E8E;
     cursor: pointer;
 }

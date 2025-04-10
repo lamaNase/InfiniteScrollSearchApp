@@ -1,10 +1,11 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Group from "./group.svg";
-import Search from "../../components/search/search";
-import Classes from "./searchPart.module.css";
+import Group from "../../../assetes/group.svg";
+import Search from "../../UI/search/search";
+import SuggestionsList from "../../UI/suggestionsList/suggestionsList";
+import Classes from "./mainSearchSection.module.css";
 
-function SearchPart() {
+function MainSearchSection() {
     const [query, setQuery] = useState("");
     const [suggestions, setSuggestions] = useState([]);
     const [activeIndex, setActiveIndex] = useState(-1);
@@ -71,7 +72,7 @@ function SearchPart() {
                 handleSearch(e);
             }
         }
-    };    
+    };
 
     const handleBlur = () => {
         setShowMenu(false);
@@ -81,6 +82,12 @@ function SearchPart() {
         if (suggestions.length > 0) {
             setShowMenu(true);
         }
+    };
+
+    const onSuggestionClick = (e, item) => {
+        setQuery(item);
+        setShowMenu(false);
+        handleSearch(e, item);
     };
 
     return (
@@ -100,22 +107,11 @@ function SearchPart() {
                     />
 
                     {showMenu && (
-                        <ul>
-                            {suggestions.map((item, index) => (
-                                <li
-                                    key={index}
-                                    onMouseDown={(e) => {
-                                        setQuery(item);
-                                        setShowMenu(false);
-                                        handleSearch(e, item); // Trigger search on click
-                                    }}
-                                    className={`${Classes.suggestionItem} ${index === activeIndex ? Classes.active : ""
-                                        }`}
-                                >
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
+                        <SuggestionsList
+                            suggestions={suggestions}
+                            activeIndex={activeIndex}
+                            onSuggestionClick={onSuggestionClick}
+                        />
                     )}
                 </div>
                 < Search
@@ -128,4 +124,4 @@ function SearchPart() {
     );
 }
 
-export default SearchPart;
+export default MainSearchSection;

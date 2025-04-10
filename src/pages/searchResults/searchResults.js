@@ -1,10 +1,10 @@
-import Navigationbar from "./navigationbar";
+import SearchResultsHeader from "../../components/widgets/searchResultsHeader/searchResultsHeader";
 import Results from "./results";
 
 function SearchResults () {
     return (
         <div>
-            < Navigationbar />
+            < SearchResultsHeader />
             < Results />
         </div>
     );

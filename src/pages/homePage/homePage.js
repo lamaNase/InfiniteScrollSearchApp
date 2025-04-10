@@ -1,11 +1,11 @@
-import Navigationbar from "./navigationbar";
-import SearchPart from "./searchPart";
+import MainHeader from "../../components/widgets/mainHeader/mainHeader";
+import MainSearchSection from "../../components/widgets/mainSearchSection/mainSearchSection";
 
 function HomePage () {
     return (
         <div>
-            < Navigationbar />
-            < SearchPart />
+            < MainHeader />
+            < MainSearchSection />
         </div>
     );
 }

@@ -1,0 +1,26 @@
+.suggestionsList {
+    list-style-type: none;
+    border: solid 1px black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    align-items: start;
+    padding: 5px;
+}
+
+.suggestionsList li {
+    width: 90%;
+}
+
+.suggestionsList li:hover {
+    background-color: #0A8D56;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #0A8D56;
+    color: white;
+}
