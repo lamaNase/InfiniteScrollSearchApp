@@ -7,7 +7,6 @@
 }
 
 .rightSide {
-    width: 820px;
     display: flex;
     gap: 5.6px;
     background-color: white;
@@ -45,17 +44,18 @@
 
 @media only screen and (max-width: 600px) {
     .header {
-        width: 600px;
+        width: 100%;
         flex-wrap: wrap;
-        flex-direction: column;
     }
 
     .rightSide {
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .headerButtons {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
     }
 }

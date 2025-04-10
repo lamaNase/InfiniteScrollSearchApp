@@ -1,4 +1,4 @@
-import Questions from "./questions/questions";
+import Questions from "../questions/questions";
 import Loader from "./loader/loading";
 import { useEffect, useState, useRef } from "react";
 
@@ -50,7 +50,7 @@ function InfiniteScroll() {
     <div>
       <Questions questions={loadedData} />
       <div ref={boxRef}>
-      {hasMoreData && < Loader />}
+      {hasMoreData && isLoading && < Loader />}
       </div>
     </div>
   );

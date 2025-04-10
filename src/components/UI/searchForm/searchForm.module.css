@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    gap: 15px;
+    background-color: inherit;
+    align-items: center;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: inherit;
+    position: relative;
+    width: 100%;
+}
+
+.form input {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    border: solid 1px #8E8E8E;
+}
+
+.form img {
+    background-color: inherit;
+    border: solid 1px white;
+    border-radius: 9px;
+}
+
+.form img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

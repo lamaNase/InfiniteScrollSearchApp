@@ -1,46 +1,17 @@
-.main main {
-    width: 800px;
-    margin-top: 114px;
-    margin-right: 320px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.main p {
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: right;
-    color: #383838;
-    font-weight: bold;
-}
-
-.main input {
-    width: 100%;
-    height: 52px;
-    border-radius: 12px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    border: solid 1px #8E8E8E;
-}
-
-.main .options {
+.options {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.main .options div {
+.options div {
     display: flex;
     gap: 8px;
     align-items: center;
 }
 
-.main .options button {
+.options button {
     border: none;
     border-radius: 12px;
     padding: 16px;
@@ -50,12 +21,6 @@
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-}
-
-.main .options button:hover {
-    background-color: #1CB0F6;
-    color: white;
-    cursor: pointer;
 }
 
 .filterButton {
@@ -69,13 +34,19 @@
     transition: background-color 0.2s ease;
 }
 
+.options button:hover {
+    background-color: #1CB0F6;
+    color: white;
+    cursor: pointer;
+}
+
 .filterButtonActive {
     background-color: #1CB0F6;
     color: white;
     border: none;
 }
 
-.main .options .classifications {
+.classifications {
     padding: 16px;
     display: flex;
     gap: 5px;
@@ -83,5 +54,5 @@
 }
 
 .classifications img {
-    background-color: #9664C533;
+    background-color: inherit;
 }

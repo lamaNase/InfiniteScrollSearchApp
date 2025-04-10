@@ -1,13 +1,13 @@
 import SearchResultsHeader from "../../components/widgets/searchResultsHeader/searchResultsHeader";
-import Results from "./results";
+import SearchResults from "../../components/widgets/searchResults/searchResults";
 
-function SearchResults () {
+function SearchResultsPage () {
     return (
         <div>
             < SearchResultsHeader />
-            < Results />
+            < SearchResults />
         </div>
     );
 }
 
-export default SearchResults;
+export default SearchResultsPage;

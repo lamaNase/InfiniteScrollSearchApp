@@ -1,17 +1,18 @@
 .main {
     width: 100%;
-    height: 1000px;
     background-color: #0A8D56;
-    position: relative;
+    display: flex;
+    gap: 40px;
+    gap: 50px;
+    align-items: center;
+    padding: 80px 150px 80px 30px;
 }
 
 .main form {
-    position: absolute;
-    top: 30%;
-    right: 20%;
     display: flex;
     gap: 15px;
     background-color: #0A8D56;
+    align-items: center;
 }
 
 .main form div {
@@ -19,6 +20,7 @@
     flex-direction: column;
     gap: 1px;
     background-color: #0A8D56;
+    position: relative;
 }
 
 .main form input {
@@ -40,28 +42,21 @@
 }
 
 .group {
-    position: absolute;
-    top: 160px;
-    left: 80px;
     background-color: #0A8D56;
 }
 
 @media only screen and (max-width: 600px) {
     .main {
-        width: 600px;
+        width: 100%;
         background-color: #0A8D56;
-        position: relative;
-        top: 0;
-        left: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        padding-top: 60px;
     }
 
     .main form {
         top: 15%;
-        right: 15%;
-    }
-
-    .group {
-        top: 40%;
         right: 15%;
     }
 }
