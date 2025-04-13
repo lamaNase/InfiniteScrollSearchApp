@@ -14,7 +14,7 @@ function MainHeader() {
     return (
         <header className={Classes.header}>
             <div className={Classes.rightSide}>
-                <Logo />
+                < Logo />
                 <div className={Classes.headerButtons}>
                     < HeaderButton srcIcon={myPlane} text="خطتي" />
                     < HeaderButton srcIcon={myLibrary} text="مكتبتي" />

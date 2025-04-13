@@ -28,3 +28,19 @@
     border: solid 1px #8E8E8E;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .headerButton {
+        gap: 5px;
+        padding: 5px 8px 5px 8px;
+    }
+
+    .headerButton p {
+        font-size: 14px;
+    }
+
+    .headerButton img {
+        width: 15px;
+        height: 15px;
+    }
+}
