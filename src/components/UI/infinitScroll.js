@@ -1,6 +1,8 @@
 import Questions from "../questions/questions";
 import Loader from "./loader/loading";
 import { useEffect, useState, useRef } from "react";
+import { fetchQuestions } from "../../utils/fetchData";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 function InfiniteScroll() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,8 +15,7 @@ function InfiniteScroll() {
     if (!hasMoreData) return;
 
     setIsLoading(true);
-    fetch(`https://jsonplaceholder.typicode.com/posts?_page=${currentPage}&_limit=10`)
-      .then(response => response.json())
+    fetchQuestions(currentPage)
       .then(data => {
         if (data.length === 0) {
           setHasMoreData(false);
@@ -25,32 +26,22 @@ function InfiniteScroll() {
       });
   }, [currentPage, hasMoreData]);
 
-  useEffect(() => {
-    if (!boxRef.current || !hasMoreData) return;
-
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-
-      if (entry.isIntersecting) {
-        setCurrentPage(prev => {
-          if (prev >= 9) {
-            setHasMoreData(false);
-            return prev;
-          }
-          return prev + 1;
-        });
+  useIntersectionObserver({
+    targetRef: boxRef,
+    onIntersect: () => {
+      if (!isLoading && hasMoreData) {
+        setCurrentPage(prev => prev + 1);
       }
-    });
-
-    observer.observe(boxRef.current);
-    return () => observer.disconnect();
-  }, [hasMoreData]);
+    },
+    threshold: 1.0,
+    enabled: hasMoreData,
+  });
 
   return (
     <div>
       <Questions questions={loadedData} />
       <div ref={boxRef}>
-      {hasMoreData && isLoading && < Loader />}
+        {hasMoreData && isLoading && <Loader />}
       </div>
     </div>
   );

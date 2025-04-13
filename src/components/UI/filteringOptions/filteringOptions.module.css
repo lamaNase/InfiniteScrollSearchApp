@@ -7,31 +7,21 @@
 
 .options div {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
     align-items: center;
+    width: 50%;
 }
 
 .options button {
+    padding: 16px;
     border: none;
     border-radius: 12px;
-    padding: 16px;
-    width: 140px;
+    text-align: center;
+    vertical-align: middle;
     background-color: white;
     color: #383838;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    text-align: center;
-}
-
-.filterButton {
-    background-color: white;
-    color: black;
-    border: 1px solid lightgray;
-    border-radius: 6px;
-    padding: 8px 12px;
-    margin-right: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
 .options button:hover {
@@ -46,13 +36,25 @@
     border: none;
 }
 
-.classifications {
-    padding: 16px;
+.options .classifications {
     display: flex;
-    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
     background-color: #9664C533;
 }
 
 .classifications img {
+    width: 15px;
     background-color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .options button {
+        font-size: 8px;
+        padding: 16px;
+    }
+
+    .options div {
+        width: 70%;
+    }
 }

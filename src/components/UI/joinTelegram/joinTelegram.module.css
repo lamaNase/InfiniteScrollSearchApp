@@ -4,7 +4,6 @@
     align-items: center;
     border: solid 1px #1CB0F6;
     border-radius: 6px;
-    padding: 16px 20px 16px 20px;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -24,4 +23,14 @@
 .joinTelegram:hover {
     cursor: pointer;
     opacity: 0.6;
+}
+
+.joinTelegram img {
+    background-color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .joinTelegram p {
+        font-size: 10px;
+    }
 }

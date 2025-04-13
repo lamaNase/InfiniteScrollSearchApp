@@ -1,7 +1,12 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
 .main main {
-    width: 800px;
-    margin-top: 114px;
-    margin-right: 320px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 24px;

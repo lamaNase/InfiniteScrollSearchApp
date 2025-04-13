@@ -1,5 +1,4 @@
 .questionsBank {
-    padding: 16px 20px 16px 20px;
     border-radius: 6px;
     font-size: 14px;
     border: solid 1px #1A384B;
@@ -15,4 +14,10 @@
 .questionsBank:hover {
     cursor: pointer;
     opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+    .questionsBank {
+        font-size: 10px;
+    }
 }

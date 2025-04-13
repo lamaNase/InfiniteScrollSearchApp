@@ -99,7 +99,7 @@ function SearchForm () {
                         onKeyDown={handleKeyDown}
                         onBlur={handleBlur}
                         onFocus={handleFocus}
-                        placeholder="Start search"
+                        placeholder="ابدأ البحث هنا"
                         ref={inputRef}
                     />
 

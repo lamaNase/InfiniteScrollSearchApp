@@ -2,43 +2,14 @@
     width: 100%;
     background-color: #0A8D56;
     display: flex;
-    gap: 40px;
-    gap: 50px;
+    justify-content: space-around;
     align-items: center;
     padding: 80px 150px 80px 30px;
 }
 
-.main form {
-    display: flex;
-    gap: 15px;
-    background-color: #0A8D56;
-    align-items: center;
-}
-
-.main form div {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    background-color: #0A8D56;
-    position: relative;
-}
-
-.main form input {
-    width: 400px;
-    text-align: left;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 15px;
-    background-color: white;
-}
-
-.main form img {
-    background-color: #0A8D56;
-}
-
-.main form img:hover {
-    cursor: pointer;
-    background-color: #10a366;;
+.searchForm {
+    width: 35%;
+    background-color: inherit;
 }
 
 .group {
@@ -50,13 +21,19 @@
         width: 100%;
         background-color: #0A8D56;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 40px;
         padding: 40px;
         padding-top: 60px;
+        align-items: center;
+        padding: 25px;
+        
     }
 
-    .main form {
-        top: 15%;
-        right: 15%;
+    .group {
+        width: 70%;
+    }
+
+    .searchForm {
+        width: 95%;
     }
 }

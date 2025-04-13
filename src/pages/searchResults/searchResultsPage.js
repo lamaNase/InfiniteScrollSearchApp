@@ -3,10 +3,7 @@ import SearchResults from "../../components/widgets/searchResults/searchResults"
 
 function SearchResultsPage () {
     return (
-        <div>
-            < SearchResultsHeader />
-            < SearchResults />
-        </div>
+        < SearchResults />
     );
 }
 

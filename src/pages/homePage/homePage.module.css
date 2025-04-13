@@ -1,0 +1,15 @@
+.headerButtons {
+    display: none;
+    background-color: inherit;
+    padding: 16px 20px 16px 10px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

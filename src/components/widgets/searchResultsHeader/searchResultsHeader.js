@@ -10,7 +10,7 @@ function SearchResultsHeader() {
         <header className={Classes.header}>
             < Logo />
             <div>
-                < Search/>
+                < Search />
                 <div className={Classes.rectangle}></div>
                 < QuestionsBank />
                 < JoinTelegram />

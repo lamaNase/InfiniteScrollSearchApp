@@ -2,12 +2,14 @@ import Group from "../../../assetes/group.svg";
 import Classes from "./mainSearchSection.module.css";
 import SearchForm from "../../UI/searchForm/searchForm";
 
-function MainSearchSection() {
+function MainSearchSection(props) {
     return (
-        <main className={Classes.main}>
-            <SearchForm />
-            <img className={Classes.group} src={Group} alt="Group" />
-        </main>
+        <div>
+            <main className={Classes.main}>
+                <div className={Classes.searchForm}><SearchForm /></div>
+                <img className={Classes.group} src={Group} alt="Group" />
+            </main>
+        </div>
     );
 }
 

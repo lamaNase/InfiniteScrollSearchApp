@@ -1,11 +1,12 @@
-import MainHeader from "../../components/widgets/mainHeader/mainHeader";
 import MainSearchSection from "../../components/widgets/mainSearchSection/mainSearchSection";
+import HeaderButtons from "../../components/UI/headerButtons/headerButtons";
+import Classes from "./homePage.module.css";
 
 function HomePage () {
     return (
         <div>
-            < MainHeader />
-            < MainSearchSection />
+            < MainSearchSection/>
+            <div className={Classes.headerButtons}>< HeaderButtons /></div>
         </div>
     );
 }

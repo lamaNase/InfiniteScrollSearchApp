@@ -10,36 +10,10 @@
     margin: 0;
 }
 
-.TafwqLogo {
-    width: 92.51px;
-    height: 40px;
-    background-color: white;
-}
-
 .header div {
+    width: 50%;
     display: flex;
-    gap: 24px;
-    background-color: white;
-}
-
-.header div img {
-    width: 39.72px;
-    height: 40.41px;
-    gap: 9.07px;
-    background-color: white;
-}
-
-.header div .joinTelegram {
-    border: solid 1px #1CB0F6;
-    color: #1CB0F6;
-    display: flex;
-    gap: 10px;
-    background-color: white;
-}
-
-.header div .joinTelegram .icon {
-    width: 16px; 
-    height: 14px;
+    justify-content: space-between;
     background-color: white;
 }
 
@@ -49,4 +23,10 @@
     border-radius: 999px;
     background-color: #E5E5E5;
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header div {
+        width: 80%;
+    }
 }
