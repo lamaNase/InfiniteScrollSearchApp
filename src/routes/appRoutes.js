@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { ROUTES } from "./routeConstants";
 
 const HomePage = lazy(() => import('../pages/homePage/homePage'));
 const SearchResultsPage = lazy(() => import('../pages/searchResults/searchResultsPage'));
@@ -9,8 +10,8 @@ function AppRoutes() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/searchResults" element={<SearchResultsPage />} />
+        <Route path={ROUTES.HOME} element={<HomePage />} />
+        <Route path={ROUTES.SEARCH_RESULTS} element={<SearchResultsPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

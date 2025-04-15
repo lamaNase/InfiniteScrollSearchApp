@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Classes from "./searchForm.module.css";
 import Search from "../../UI/search/search";
 import SuggestionsList from "../suggestionsList/suggestionsList";
+import { ROUTES } from "../../../routes/routeConstants";
 
 function SearchForm () {
     const [query, setQuery] = useState("");
@@ -41,7 +42,7 @@ function SearchForm () {
         localStorage.setItem("searchHistory", JSON.stringify(updatedSearches));
 
         console.log("Searching for:", searchQuery);
-        navigate(`/searchResults?query=${encodeURIComponent(searchQuery)}`);
+        navigate(`${ROUTES.SEARCH_RESULTS}?query=${encodeURIComponent(searchQuery)}`)
     };
 
     const handleKeyDown = (e) => {
