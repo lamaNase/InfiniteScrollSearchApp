@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classificationsImage from "../../../assetes/classifications.svg";
+import classificationsImage from "~/assetes/classifications.svg";
 import Classes from "./filteringOptions.module.css";
 
 function FilteringOptions() {

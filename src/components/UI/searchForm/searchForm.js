@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Classes from "./searchForm.module.css";
-import Search from "../../UI/search/search";
-import SuggestionsList from "../suggestionsList/suggestionsList";
-import { ROUTES } from "../../../routes/routeConstants";
+import Search from "~/components/UI/search/search";
+import SuggestionsList from "~/components/UI/suggestionsList/suggestionsList";
+import { ROUTES } from "~/routes/routeConstants";
 
 function SearchForm () {
     const [query, setQuery] = useState("");

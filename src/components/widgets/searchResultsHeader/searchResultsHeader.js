@@ -1,9 +1,9 @@
-import Logo from "../../UI/logo/logo"
-import Search from "../../UI/search/search"
-import QuestionsBank from "../../UI/questionsBank/questionsBank"
-import JoinTelegram from "../../UI/joinTelegram/joinTelegram"
+import Logo from "~/components/UI/logo/logo"
+import Search from "~/components/UI/search/search"
+import QuestionsBank from "~/components/UI/questionsBank/questionsBank"
+import JoinTelegram from "~/components/UI/joinTelegram/joinTelegram"
 import Classes from "./searchResultsHeader.module.css"
-import Login from "../../UI/login/login"
+import Login from "~/components/UI/login/login"
 
 function SearchResultsHeader() {
     return (

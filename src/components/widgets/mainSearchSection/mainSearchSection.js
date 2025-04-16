@@ -1,6 +1,6 @@
-import Group from "../../../assetes/group.svg";
+import Group from "~/assetes/group.svg";
 import Classes from "./mainSearchSection.module.css";
-import SearchForm from "../../UI/searchForm/searchForm";
+import SearchForm from "~/components/UI/searchForm/searchForm";
 
 function MainSearchSection(props) {
     return (

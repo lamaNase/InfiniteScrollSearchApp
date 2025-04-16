@@ -1,9 +1,9 @@
-import myPlane from "../../../assetes/myPlane.svg"
-import myLibrary from "../../../assetes/myLibrary.svg"
-import myRevision from "../../../assetes/revision.svg"
-import forms from "../../../assetes/forms.svg"
-import levels from "../../../assetes/levels.svg"
-import HeaderButton from "../../UI/headerButton/headerButton"
+import myPlane from "~/assetes/myPlane.svg"
+import myLibrary from "~/assetes/myLibrary.svg"
+import myRevision from "~/assetes/revision.svg"
+import forms from "~/assetes/forms.svg"
+import levels from "~/assetes/levels.svg"
+import HeaderButton from "~/components/UI/headerButton/headerButton"
 import Classes from "./headerButtons.module.css"
 
 function HeaderButtons(props) {

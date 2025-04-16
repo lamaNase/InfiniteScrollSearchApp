@@ -1,8 +1,8 @@
 import Questions from "../questions/questions";
 import Loader from "./loader/loading";
 import { useEffect, useState, useRef } from "react";
-import { fetchQuestions } from "../../utils/fetchData";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { fetchQuestions } from "~/utils/fetchData";
+import useIntersectionObserver from "~/hooks/useIntersectionObserver";
 
 function InfiniteScroll() {
   const [isLoading, setIsLoading] = useState(true);

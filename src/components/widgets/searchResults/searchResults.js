@@ -1,8 +1,8 @@
 import { useSearchParams } from "react-router-dom";
 import InfiniteScroll from "../../UI/infinitScroll";
 import Classes from "./searchResults.module.css";
-import SearchForm from "../../UI/searchForm/searchForm";
-import FilteringOptions from "../../UI/filteringOptions/filteringOptions";
+import SearchForm from "~/components/UI/searchForm/searchForm";
+import FilteringOptions from "~/components/UI/filteringOptions/filteringOptions";
 
 function Results() {
     const [searchParams] = useSearchParams();

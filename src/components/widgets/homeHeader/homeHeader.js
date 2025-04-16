@@ -1,7 +1,7 @@
-import Logo from "../../UI/logo/logo"
-import Search from "../../UI/search/search"
-import Login from "../../UI/login/login"
-import HeaderButtons from "../../UI/headerButtons/headerButtons"
+import Logo from "~/components/UI/logo/logo"
+import Search from "~/components/UI/search/search"
+import Login from "~/components/UI/login/login"
+import HeaderButtons from "~/components/UI/headerButtons/headerButtons"
 import Classes from "./homeHeader.module.css"
 
 function HomeHeader(props) {
