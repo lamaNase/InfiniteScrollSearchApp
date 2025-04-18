@@ -1,4 +1,4 @@
-# Infinite Scroll Search App 🌐🔍
+# Infinite Scroll Search Questions Website 🌐🔍
 
 ## Overview
 This project implements a search functionality with infinite scrolling using the Intersection Observer API. Users can search for a term, and the app will fetch data from an API. As the user scrolls down the page, more data is automatically fetched and displayed. 📜⬇️
